@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Transform parent;
     [SerializeField] private GameObject explosionFX;
     [SerializeField] private int points;
+    [SerializeField] private int health;
     ScoreBehavior scoreBehavior;
 
     // Start is called before the first frame update
@@ -23,10 +24,15 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        GameObject explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
-        explosion.transform.parent = parent;
-        Destroy(this.gameObject);
-        ScoreBehavior.Instance.IncreaseScore(points);
-        //scoreBehavior.IncreaseScore(points);
+        health--;
+        if (health < 0)
+        {
+            GameObject explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
+            explosion.transform.parent = parent;
+            Destroy(this.gameObject);
+            ScoreBehavior.Instance.IncreaseScore(points);
+            //scoreBehavior.IncreaseScore(points);
+        }
+
     }
 }

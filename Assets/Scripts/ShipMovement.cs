@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using static UnityEngine.ParticleSystem;
 
 public class ShipMovement : MonoBehaviour
 {
@@ -14,6 +16,9 @@ public class ShipMovement : MonoBehaviour
     [SerializeField] [Tooltip("How much it turns")] private float turnAmount;
     [SerializeField] private float positionPitchFactor;
     [SerializeField] private float positionYawFactor;
+
+    [Header ("Lasers")]
+    [SerializeField] private GameObject[] guns;
 
 
     private float horizontalThrow;
@@ -35,17 +40,22 @@ public class ShipMovement : MonoBehaviour
         GetInput();
         ProcessTranslation();
         ProcessRotation();
-
-        if (CrossPlatformInputManager.GetButtonDown("Fire1"))
-            print("feuer frei");
+        ProcessFire();
+       
     }
 
+    private void ProcessFire()
+    {
+        bool buttonIsDown = CrossPlatformInputManager.GetButton("Fire1");
+        int boolValue = buttonIsDown ? 1 : 0;
+        foreach (GameObject gun in guns)
+        {
+            ParticleSystem bullet = gun.GetComponent<ParticleSystem>();
+            EmissionModule emission = bullet.emission;
+            emission.rateOverTime = boolValue * 10;
+        }
 
-
-
-
-   
-
+    }
 
     private void GetInput()
     {

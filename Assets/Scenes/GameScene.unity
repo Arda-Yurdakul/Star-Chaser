@@ -353,6 +353,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 643908566}
+    - target: {fileID: 7766220758946557995, guid: e01c5992142ecb442b727dbb4dc4511d, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e01c5992142ecb442b727dbb4dc4511d, type: 3}
 --- !u!4 &288579727 stripped
@@ -458,6 +462,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 643908566}
+    - target: {fileID: 4491849523886485576, guid: b3977c384013740408f6dbd67a0d1056, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7268870280967270557, guid: b3977c384013740408f6dbd67a0d1056, type: 3}
       propertyPath: m_Name
       value: Ship_01 (1)
@@ -543,6 +551,16 @@ Transform:
   m_Father: {fileID: 1350280816}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &489996102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4197218367628580375, guid: 9c65699b19939544299aa3b470e01abd, type: 3}
+  m_PrefabInstance: {fileID: 4197218368240928175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &622939851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4197218367628580375, guid: 9c65699b19939544299aa3b470e01abd, type: 3}
+  m_PrefabInstance: {fileID: 2077097313}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &643908565
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +650,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 643908566}
+    - target: {fileID: 7766220758946557995, guid: e01c5992142ecb442b727dbb4dc4511d, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e01c5992142ecb442b727dbb4dc4511d, type: 3}
 --- !u!4 &700161101 stripped
@@ -1020,6 +1042,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 643908566}
+    - target: {fileID: 2752096507583015905, guid: 1915bf7ac1e776b4f85eacd947395ac7, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3378708947417424396, guid: 1915bf7ac1e776b4f85eacd947395ac7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.25133
@@ -1132,6 +1158,9 @@ MonoBehaviour:
   turnAmount: 20
   positionPitchFactor: -1
   positionYawFactor: -2.5
+  guns:
+  - {fileID: 489996102}
+  - {fileID: 622939851}
 --- !u!114 &1252074584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1582,6 +1611,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 643908566}
+    - target: {fileID: 2752096507583015905, guid: 1915bf7ac1e776b4f85eacd947395ac7, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3378708947417424396, guid: 1915bf7ac1e776b4f85eacd947395ac7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 107.2
@@ -1780,6 +1813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullets2
       objectReference: {fileID: 0}
+    - target: {fileID: 4197218367628580375, guid: 9c65699b19939544299aa3b470e01abd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5674079491199506506, guid: 9c65699b19939544299aa3b470e01abd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9c65699b19939544299aa3b470e01abd, type: 3}
@@ -1969,6 +2006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullets
       objectReference: {fileID: 0}
+    - target: {fileID: 4197218367628580375, guid: 9c65699b19939544299aa3b470e01abd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5674079491199506506, guid: 9c65699b19939544299aa3b470e01abd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9c65699b19939544299aa3b470e01abd, type: 3}
@@ -2003,6 +2044,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 643908566}
+    - target: {fileID: 4491849523886485576, guid: b3977c384013740408f6dbd67a0d1056, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7268870280967270557, guid: b3977c384013740408f6dbd67a0d1056, type: 3}
       propertyPath: m_Name
       value: Ship_01
