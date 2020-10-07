@@ -355,7 +355,7 @@ PrefabInstance:
       objectReference: {fileID: 643908566}
     - target: {fileID: 7766220758946557995, guid: e01c5992142ecb442b727dbb4dc4511d, type: 3}
       propertyPath: health
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e01c5992142ecb442b727dbb4dc4511d, type: 3}
@@ -464,7 +464,7 @@ PrefabInstance:
       objectReference: {fileID: 643908566}
     - target: {fileID: 4491849523886485576, guid: b3977c384013740408f6dbd67a0d1056, type: 3}
       propertyPath: health
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7268870280967270557, guid: b3977c384013740408f6dbd67a0d1056, type: 3}
       propertyPath: m_Name
@@ -652,7 +652,7 @@ PrefabInstance:
       objectReference: {fileID: 643908566}
     - target: {fileID: 7766220758946557995, guid: e01c5992142ecb442b727dbb4dc4511d, type: 3}
       propertyPath: health
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e01c5992142ecb442b727dbb4dc4511d, type: 3}
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 1350280815}
-  lookAheadForTargetOffset: 0.5
+  lookAheadForTargetOffset: 0.25
   lookAheadForTargetFactor: 0
   lookAheadForSpeedOffset: 10
   lookAheadForSpeedFactor: 0.2
@@ -1044,7 +1044,7 @@ PrefabInstance:
       objectReference: {fileID: 643908566}
     - target: {fileID: 2752096507583015905, guid: 1915bf7ac1e776b4f85eacd947395ac7, type: 3}
       propertyPath: health
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3378708947417424396, guid: 1915bf7ac1e776b4f85eacd947395ac7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1613,7 +1613,7 @@ PrefabInstance:
       objectReference: {fileID: 643908566}
     - target: {fileID: 2752096507583015905, guid: 1915bf7ac1e776b4f85eacd947395ac7, type: 3}
       propertyPath: health
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3378708947417424396, guid: 1915bf7ac1e776b4f85eacd947395ac7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2046,7 +2046,7 @@ PrefabInstance:
       objectReference: {fileID: 643908566}
     - target: {fileID: 4491849523886485576, guid: b3977c384013740408f6dbd67a0d1056, type: 3}
       propertyPath: health
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7268870280967270557, guid: b3977c384013740408f6dbd67a0d1056, type: 3}
       propertyPath: m_Name
