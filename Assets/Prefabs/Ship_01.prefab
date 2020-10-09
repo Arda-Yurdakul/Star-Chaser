@@ -111,3 +111,4 @@ MonoBehaviour:
   parent: {fileID: 0}
   explosionFX: {fileID: 2994049833057877991, guid: bdafa105848a31d4b8915a64b96d5c98, type: 3}
   points: 100
+  health: 0

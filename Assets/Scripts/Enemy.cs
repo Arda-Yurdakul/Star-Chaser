@@ -30,12 +30,17 @@ public class Enemy : MonoBehaviour
         if (health < 0 && !isDead)
         {
             isDead = true;
-            GameObject explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
-            explosion.transform.parent = parent;
-            Destroy(this.gameObject);
+            BlowUp();
             ScoreBehavior.Instance.IncreaseScore(points);
             //scoreBehavior.IncreaseScore(points);
         }
 
+    }
+
+    public void BlowUp()
+    {
+        GameObject explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
+        explosion.transform.parent = parent;
+        Destroy(this.gameObject);
     }
 }
